@@ -1,19 +1,6 @@
 
 import React, { createContext, useContext, useReducer, ReactNode } from 'react';
-
-// Product interface
-interface Product {
-  id: string;
-  title: string;
-  description: string;
-  price: number;
-  quantity: number;
-  discount: number;
-  category: string;
-  image: string;
-  active: boolean;
-  sellerId: string;
-}
+import { Product } from '../Products/ProductList';
 
 // App State interface
 interface AppState {
@@ -23,9 +10,7 @@ interface AppState {
 // Action types
 type AppAction = 
   | { type: 'SET_PRODUCTS'; payload: Product[] }
-  | { type: 'ADD_PRODUCT'; payload: Product }
-  | { type: 'UPDATE_PRODUCT'; payload: Product }
-  | { type: 'DELETE_PRODUCT'; payload: string };
+  | { type: 'ADD_PRODUCT'; payload: Product };
 
 // Context type
 interface AppContextType {
@@ -51,20 +36,6 @@ const appReducer = (state: AppState, action: AppAction): AppState => {
       return {
         ...state,
         products: [...state.products, action.payload]
-      };
-    
-    case 'UPDATE_PRODUCT':
-      return {
-        ...state,
-        products: state.products.map(product => 
-          product.id === action.payload.id ? action.payload : product
-        )
-      };
-    
-    case 'DELETE_PRODUCT':
-      return {
-        ...state,
-        products: state.products.filter(product => product.id !== action.payload)
       };
     
     default:
