@@ -11,7 +11,7 @@ alert modals
 
 
 pages: 
-Register
+Register 
 Login
 home
 cart

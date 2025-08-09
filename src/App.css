@@ -1,0 +1,72 @@
+/* commoin */
+.text-left{
+  text-align: left;
+}
+.d-flex {
+  display: flex;
+}
+
+
+/* header */
+.header.d-flex {
+    justify-content: space-between;
+    padding: 32px 52px;
+    background: #eeeeee;
+    margin-bottom: 38px;
+}
+
+
+/* login & register */
+.authBox {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #eeeeee;
+    border-radius: 10px;
+}
+.authBox div.d-flex {
+    flex-direction: column;
+    gap: 5px;
+}
+.authBox input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.authBox button, .themebtn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.authBox button:hover , .themebtn:hover{
+    background: #0056b3;
+}
+.authBox h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.authBox .error {
+    color: rgb(180, 53, 53);
+    margin-top: 10px;
+}
+.usertype{
+  display: flex;
+  gap: 20px}
+
+
+  /* cart */
+  .d-flex.cart {
+    background: #e1e1e1;
+    border-radius: 10px;
+    max-width: 95%;
+    padding: 18px;
+    margin: 16px auto;
+}
