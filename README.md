@@ -24,7 +24,7 @@ Focus on delivering a **Minimum Viable Product (MVP)** that demonstrates key fea
    - Profile management
 
 2. **Product Catalog**
-   - List, search, and filter products by name and category[2]
+   - List, search, and filter products by name and category
 
 3. **Shopping Cart and Checkout**
    - Add/remove items from cart
